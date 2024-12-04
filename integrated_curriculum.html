@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Integrated Curriculum - Facilitating Creativity</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .fa-anchor,
+        .fa-coffee {
+            font-size: 200px
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #37a3ce;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .menu a:hover {
+            background-color: #37a3ce;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 24px;
+            width: 30px;
+            background: transparent;
+            border: none;
+            z-index: 10;
+        }
+
+        .hamburger div {
+            height: 4px;
+            width: 100%;
+            background-color: white;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 1024px) {
+            .menu {
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                overflow-x: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #37a3ce;
+                width: 100%;
+                z-index: 9;
+            }
+
+            .menu.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text h2 {
+                font-size: 20px;
+            }
+
+            .text p {
+                font-size: 14px;
+            }
+
+            .menu a {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .image {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .text {
+            flex: 2 1 300px;
+            text-align: left;
+        }
+
+        .text h2 {
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: #333;
+        }
+
+        .text p {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #37a3ce;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="art.html">Art</a>
+            <a href="drama_puppetry.html">Drama & <br>Puppetry</a>
+            <a href="movement_music.html">Movement &<br> Music</a>
+            <a href="language_literacy.html">Language &<br> Literacy</a>
+            <a href="science.html">Science</a>
+            <a href="engineering.html">Engineering</a>
+            <a href="technologies.html">Technologies</a>
+            <a href="math_numeracy.html">Mathematics &<br> Numeracy</a>
+            <a href="humanities.html">Humanities</a>
+            <a href="integrated_curriculum.html">Integrated Curriculum</a>
+        </div>
+    </nav>
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>STEM</h1>
+                <h5 class="w3-padding-32">Childhood teachers play a significant role in fostering creativity within the curriculum, particularly in STEM (Science, Technology, Engineering, and Mathematics) education. Here are several ways they can facilitate creativity.Teachers can design STEM lessons that encourage exploration without a fixed outcome. For example, when teaching science, teachers can set up experiments where children are asked to predict outcomes and investigate multiple solutions, fostering creativity through trial and error.</h5>
+                <br><br><br><br><br><br>
+                <p class="w3-text-grey">Teachers can create STEM challenges that encourage students to think critically and solve problems creatively. For example, in engineering, teachers might task children with designing a structure using only certain materials, requiring them to think creatively about how to meet the challenge.Incorporating the arts into STEM education (STEAM) can significantly boost creativity. Teachers can use drawing, music, or movement to explain mathematical concepts or scientific phenomena, allowing children to explore ideas from multiple perspectives and make connections across subjects.Group work can encourage creativity as students share different perspectives and come up with innovative solutions together. Teachers can organize STEM projects where children collaborate to solve real-world problems, sparking creativity through teamwork.</p>
+            </div>
+
+            <div class="w3-third w3-center">
+                <!-- <i class="fa fa-anchor w3-padding-64 w3-text-red"></i> -->
+                <img src="./images/STEM.jfif" class="w3-padding-64" alt="Steak" style="width:100%">
+                <img src="./images/STEM1.jfif" class="w3-padding-64" alt="Steak" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <!-- <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i> -->
+                <img src="./images/STEAM.jfif" class="w3-padding-64 w3-margin-right" alt="Steak" style="width:100%">
+                <img src="./images/STEAM1.jfif" class="w3-padding-64 w3-margin-right" alt="Steak" style="width:100%">
+            </div>
+
+            <div class="w3-twothird">
+                <h1>STEAM</h1>
+                <h5 class="w3-padding-32">Childhood teachers play a crucial role in fostering creativity in young learners, especially within the context of STEAM (Science, Technology, Engineering, Arts, and Mathematics). By integrating creativity into the curriculum, teachers can help children develop critical thinking, problem-solving skills, and a love for learning. Here are ways teachers can facilitate creativity within the STEAM curriculum</h5>
+                <br><br><br><br><br><br>
+                <p class="w3-text-grey">Conduct experiments that allow children to hypothesize, test, and draw conclusions. For example, growing plants, exploring simple chemical reactions, or investigating the physical properties of materials.Introduce coding or robotics using age-appropriate tools like Scratch or simple programmable robots. Encourage children to design and build projects that solve real-world problems.Use building blocks, such as LEGO or other construction materials, to help children explore basic engineering principles. Engage them in designing structures, bridges, or machines.</p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>STREAM </h1>
+                <h5 class="w3-padding-32">In today's rapidly evolving world, the integration of interdisciplinary approaches to learning is paramount. One such approach gaining increasing traction is Integrated Curriculum, especially in fields like STEM (Science, Technology, Engineering, and Mathematics), STEAM (Science, Technology, Engineering, Arts, and Mathematics), STREAM (Science, Technology, Reading, Engineering, Arts, and Mathematics), and STEMIE (Science, Technology, Engineering, Mathematics, Innovation, and Entrepreneurship). These approaches emphasize creative and critical thinking, problem-solving, and collaboration—skills vital for the future. Childhood teachers, in particular, play a significant role in fostering creativity within these curricula, shaping young learners into innovative thinkers.</h5>
+
+            </div>
+
+            <div class="w3-third w3-center">
+                <!-- <i class="fa fa-anchor w3-padding-64 w3-text-red"></i> -->
+                <img src="./images/STREAM.jfif" class="w3-padding-64" alt="Steak" style="width:100%">
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <!-- <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i> -->
+                <img src="./images/STEMIE.jfif" class="w3-padding-64 w3-margin-right" alt="Steak" style="width:100%">
+            </div>
+
+            <div class="w3-twothird">
+                <h1>STEMIE</h1>
+                <h5 class="w3-padding-32">Childhood teachers play a crucial role in fostering creativity within the curriculum, particularly in areas like STEMIE (Science, Technology, Engineering, Mathematics, Innovation, and Entrepreneurship). This approach encourages young students to explore and engage with these subjects in a way that nurtures their creativity and problem-solving abilities.Encouraging experimentation through projects and activities like building simple machines, conducting science experiments, and coding basic programs allows children to learn by doing.Teachers can establish a classroom culture where failure is seen as a part of the learning process. This mindset supports children in taking risks and thinking creatively.Teachers can design real-world projects that involve multiple subjects, such as creating an eco-friendly product, solving environmental issues, or exploring the engineering behind everyday objects</h5>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Creativity in Early Childhood Education
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

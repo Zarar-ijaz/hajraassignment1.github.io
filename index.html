@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Creativity in Early Childhood Curriculum</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: #37a3ce;
+      padding: 10px;
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .menu a:hover {
+      background-color: #8fcce9d7;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 24px;
+      width: 30px;
+      background: transparent;
+      border: none;
+      z-index: 10;
+    }
+
+    .hamburger div {
+      height: 4px;
+      width: 100%;
+      background-color: white;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 1024px) {
+      .menu {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #37a3ce;
+        width: 100%;
+        z-index: 9;
+      }
+
+      .menu.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .text h2 {
+        font-size: 20px;
+      }
+
+      .text p {
+        font-size: 14px;
+      }
+
+      .menu a {
+        padding: 8px 10px;
+        font-size: 14px;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .image {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .text {
+      flex: 2 1 300px;
+      text-align: left;
+    }
+
+    .text h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+      color: #333;
+    }
+
+    .text p {
+      font-size: 16px;
+      margin-bottom: 12px;
+      color: #555;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      background-color: #37a3ce;
+      color: white;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+    <div class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="art.html">Art</a>
+      <a href="drama_puppetry.html">Drama & <br>Puppetry</a>
+      <a href="movement_music.html">Movement &<br> Music</a>
+      <a href="language_literacy.html">Language &<br> Literacy</a>
+      <a href="science.html">Science</a>
+      <a href="engineering.html">Engineering</a>
+      <a href="technologies.html">Technologies</a>
+      <a href="math_numeracy.html">Mathematics &<br> Numeracy</a>
+      <a href="humanities.html">Humanities</a>
+      <a href="integrated_curriculum.html">Integrated Curriculum</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="image">
+      <img src="./images/Creative-Education.jpeg" alt="Creativee Education" />
+
+    </div>
+    <div class=" text ">
+
+      <h2>Welcoome! </h2>
+      <p>
+
+        Once again creativity is a strong link for early childhood education. It takes children to a more imaginary
+        world while enhancing their problem-solving, reasoning, and expression.
+
+      </p>
+      <p>
+
+        Our website provides tools and strategies for Childhood teachers to Boost ceativity across various curiculum
+        aras.
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-content" style="max-width:1100px">
+
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="./images/index.jfif" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600"
+          height="750">
+      </div>
+
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">About Creativity</h1><br>
+        <p class="w3-large">
+          Teachers can create an environment where children can express themselves with confidence and curiosity.
+          Teachers can ask children open-ended questions to encourage them to express themselves and find their own
+          answers.</p>
+        <p class="w3-large w3-text-grey w3-hide-medium">Teachers can share their own creative interests, questions, and
+          experiences with children.
+          Teachers can demonstrate interest and excitement when working with children.
+          Teachers can use children's backgrounds, experiences, and interests to inspire creative activities.Teachers
+          can encourage children to take initiative and value "having a go".
+        </p>
+      </div>
+    </div>
+    <div class="w3-row w3-padding-64" id="about">
+
+      <div class="w3-col m6 w3-padding-large">
+        <p class="w3-large">
+          Teachers can provide useful and encouraging comments about children's effortsTeachers can use creative
+          activities like drawing, storytelling, or role-playing to stimulate the brain.</p>
+        <p class="w3-large w3-text-grey w3-hide-medium">Teachers can provide children with different materials and ask
+          them to create new things.Creativity is an important part of early childhood education, and it can enhance
+          cognitive, emotional, and social development
+        </p>
+      </div>
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="./images/index1.jfif" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600"
+          height="750">
+      </div>
+    </div>
+
+
+    <div class="w3-container w3-padding-64" id="contact">
+      <h1>Creativity</h1><br>
+      <p>The need for the teachers of one of the private universities which is located within the Eastern Mediterranean
+        region and is in charge of the Department of Education not only to recall their understanding of creativity but
+        also to examine the assumptions and perceptions of creativity among early childhood student teachers arose from
+        the pandemic teaching and learning arrangement. More specifically, we investigated the beliefs regarding the
+        creative ideals, traits of the creative person, and the nature and potential of the creative education process
+        and its importance for the professional improvement of 15 junior early childhood teachers students through
+        informal interviews with these early childhood students. The article addresses the outcome of a qualitative
+        descriptive research investigation carried out in the context of the course entitled Designing Activities in
+        Kindergarten. Furthermore, it addresses the findings of the semi-structured interviews which aimed at finding
+        out what concepts regarding creativity early childhood students have, and what evidence they need to support the
+        idea that early childhood students need a structure and a generic scheme for idea and lesson development.
+
+      </p>
+
+      <p>While creativity was reserved for the elite during the Renaissance period, Csikszentmihaly (2006) acknowledges
+        how far along the evolution of our species has come where now creativity has become a necessity for us all.
+        According to De Bono (1992), “Creativity is priceless; its importance is indisputable. It is development at its
+        core. For there is no creativity (and thus no inspiration, p. 169) without creativity, and if there is no
+        creativity life would go the same way ad infinitum” (p. 168). Both Creative and Critical thinking</p>
+    </div>
+    <br><br><br><br>
+    <footer>
+      &copy; 2024 Role of Creativity in Early Childhood Education
+    </footer>
+
+    <script>
+
+      function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+      }
+
+    </script>
+
+</body>
+
+</html>
