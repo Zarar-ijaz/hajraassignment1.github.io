@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art - Facilitating Creativity</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: #37a3ce;
+      padding: 10px;
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #8fcce9d7;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 24px;
+      width: 30px;
+      background: transparent;
+      border: none;
+      z-index: 10;
+    }
+
+    .hamburger div {
+      height: 4px;
+      width: 100%;
+      background-color: white;
+      border-radius: 4px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    .menu a {
+      display: inline-block;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #37a3ce;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 9;
+      }
+
+      .menu.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .text h2 {
+        font-size: 20px;
+      }
+
+      .text p {
+        font-size: 14px;
+      }
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 12px;
+      color: #555;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 16px;
+      color: #555;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #37a3ce;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+    <div class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="art.html">Art</a>
+      <a href="drama_puppetry.html">Drama & <br>Puppetry</a>
+      <a href="movement_music.html">Movement &<br> Music</a>
+      <a href="language_literacy.html">Language &<br> Literacy</a>
+      <a href="science.html">Science</a>
+      <a href="engineering.html">Engineering</a>
+      <a href="technologies.html">Technologies</a>
+      <a href="math_numeracy.html">Mathematics &<br> Numeracy</a>
+      <a href="humanities.html">Humanities</a>
+      <a href="integrated_curriculum.html">Integrated Curriculum</a>
+    </div>
+  </nav>
+
+  <div class="container"
+    style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: auto; text-align: justify;">
+    <h2 style="color: #2a9d8f; text-align: center;">Introduction</h2>
+    <p>
+      <img src="./images/Creative-Education.jpeg" alt="Artistic expression"
+        style="float: left; margin: 0 15px 10px 0; width: 150px; height: auto; border-radius: 8px;">
+      Art allows children to express their thoughts and emotions visually, encouraging exploration and innovation.
+    </p>
+    <div style="clear: both;"></div>
+
+    <h2 style="color: #2a9d8f; text-align: center;">Theories & Perspectives</h2>
+    <p>
+      <img src="./images/art.jfif" alt="Constructivist learning"
+        style="float: right; margin: 0 0 10px 15px; width: 150px; height: auto; border-radius: 8px;">
+      The constructivist approach encourages hands-on, active exploration, which is vital for cognitive and creative
+      growth.
+    </p>
+    <div style="clear: both;"></div>
+
+    <h2 style="color: #2a9d8f; text-align: center;">Resources & Materials</h2>
+    <ul style="list-style-type: square; padding-left: 20px;">
+      <li>Paints, brushes, and paper</li>
+      <li>Clay and sculpting tools</li>
+      <li>Interactive drawing apps</li>
+    </ul>
+    <img src="./images/art1.jfif" alt="Art materials"
+      style="display: block; margin: 10px auto; width: 200px; height: auto; border-radius: 8px;">
+
+    <h2 style="color: #2a9d8f; text-align: center;">Examples of Learning Experiences</h2>
+    <table style="width: 100%; border-collapse: collapse; text-align: left; margin-bottom: 20px;">
+      <tr style="background-color: #e9f5f5; color: #333;">
+        <th style="padding: 10px;  border:  1px  solid   #ddd;">Age Group</th>
+        <th style="padding: 10px;  border:  1px  solid   #ddd;">Learning Experience</th>
+      </tr>
+      <tr>
+        <td style="padding: 10px;  border:  1px  solid   #ddd;">0-2 years</td>
+        <td style="padding: 10px;  border:  1px  solid   #ddd;">Finger painting with edible paints</td>
+      </tr>
+      <tr style="background-color: #f9f9f9;">
+        <td style="padding: 10px;  border:  1px  solid   #ddd;">2-3 years</td>
+        <td style="padding: 10px;  border:  1px  solid   #ddd;">Collaborative mural creation</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px;  border:  1px  solid   #ddd;">3-5 years</td>
+        <td style="padding: 10px;  border:  1px  solid   #ddd;">Exploring shapes through collage</td>
+      </tr>
+      <tr style="background-color: #f9f9f9;">
+        <td style="padding: 10px;  border:  1px  solid   #ddd;">6-8 years</td>
+        <td style="padding: 10px;  border:  1px  solid   #ddd;">Creating digital art using a drawing tablet</td>
+      </tr>
+    </table>
+    <img src="./images/art2.jfif" alt="Learning experiences"
+      style="display: block; margin: 10px auto; width: 200px; height: auto; border-radius: 8px;">
+
+    <h2 style="color: #2a9d8f; text-align: center;">Reflection</h2>
+    <p>
+      <img src="./images/art3.jfif" alt="Art reflection"
+        style="float: left; margin: 0 15px 10px 0; width: 150px; height: auto; border-radius: 8px;">
+      Art is a powerful tool for fostering creativity. My passion for art allows me to create opportunities that help
+      young children’s to develop critical thinking and self-expression.
+    </p>
+    <div style=" clear:  both;"></div>
+    <br>
+    <div class="w3-container w3-padding-64" id="contact">
+      <h1>Arts</h1><br>
+      <p>One of the most important skills for a child’s creativity is creativity. What this means in the context of
+        education, is generally that, art means the subject that is the basis of fostering creativity. One of the key
+        roles of early childhood teachers is to help to facilitate and nurture this creativity in the curriculum.
+        Through strategies that foster exploration, experimentation, and self-expression, teachers can help create space
+        for young learners to explore their creative potential.
+        They believe creativity comes up when they apply their own perceptions into their drawings or paintings. Early
+        childhood creativity includes a constellation of skills ranging from the ability to think divergently, imagine
+        the possibilities, and to represent those thoughts through multiple media. Froebel believed play gives children
+        the opportunity to interact more fully with their environment, which helps them make meaning of their world.
+
+        All said, study has displayed that the initial years
+
+      </p>
+
+      <p>An ideal art curriculum does not concern itself with product as much as the process of making — it allows
+        children to experience the process of art rather than just the art itself. In turn, at such times teachers
+        cultivate pride in their work and deeper connections to their creative acts. Creating art, in general, should be
+        as much a question of doing as it is creating an activity without a defined notion of reach. For instance,
+        instead of instructing kids to draw a tree, they can be allowed to explore different interpretations of what</p>
+      <p>A key aspect of fostering creativity is encouraging a growth mindset—where children learn that abilities and
+        skills can be developed over time with practice and perseverance. Early childhood teachers can promote this
+        mindset by praising effort rather than just results. For example,a teacher might say,"I can see how much effort
+        you put into this painting,"or"Look at how much you've learned by experimenting with different colors".
+
+        By focusing on the process of learning, teachers help children understand that mistakes and failures are part of
+        the creative journey. This is crucial for developing resilience and confidence in their abilities, as children
+        learn to embrace challenges and see setbacks as opportunities for growth.</p>
+    </div>
+  </div>
+
+  <footer>
+
+    &copy; 2024 Creative Early Education of Childern
+
+  </footer>
+
+  <script>
+
+    function toggleMenu() {
+
+      const menu = document.getElementById(' menu ');
+
+      menu.classList.toggle('active');
+
+    }
+  </script>
+</body>
+
+</html>

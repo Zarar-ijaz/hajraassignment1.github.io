@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drama & Puppetry - Facilitating Creativity</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #37a3ce;
+      padding: 10px;
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #8fcce9d7;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 24px;
+      width: 30px;
+      background: transparent;
+      border: none;
+      z-index: 10;
+    }
+
+    .hamburger div {
+      height: 4px;
+      width: 100%;
+      background-color: white;
+      border-radius: 4px;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    .menu a {
+      display: inline-block;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #37a3ce;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 9;
+      }
+
+      .menu.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .text h2 {
+        font-size: 20px;
+      }
+
+      .text p {
+        font-size: 14px;
+      }
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 12px;
+      color: #555;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 16px;
+      color: #555;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #37a3ce;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+    <div class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="art.html">Art</a>
+      <a href="drama_puppetry.html">Drama & <br>Puppetry</a>
+      <a href="movement_music.html">Movement &<br> Music</a>
+      <a href="language_literacy.html">Language &<br> Literacy</a>
+      <a href="science.html">Science</a>
+      <a href="engineering.html">Engineering</a>
+      <a href="technologies.html">Technologies</a>
+      <a href="math_numeracy.html">Mathematics &<br> Numeracy</a>
+      <a href="humanities.html">Humanities</a>
+      <a href="integrated_curriculum.html">Integrated Curriculum</a>
+    </div>
+  </nav>
+  <div class="container"
+    style="display: flex; flex-direction: column; gap: 40px; font-family: Arial, sans-serif; line-height: 1.6; color: #555; padding: 0 20px; box-sizing: border-box;">
+    <div class="welcome" style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+      <div class="image" style="flex: 1; max-width: 200px;">
+        <img src="./images/DramaPuppetry.jpg" alt="Creative Education"
+          style="width: 100%; height: auto; border-radius: 8px;" />
+      </div>
+      <div class="text" style="flex: 2;">
+        <h2 style="margin-bottom: 16px; font-size: 24px; color: #333;">Welcome!</h2>
+        <p style="margin-bottom: 12px; font-size: 16px; color: #555;">
+          Creativity is a cornerstone of early childhood education. It allows children to explore their imagination,
+          develop problem-solving skills, and express themselves in unique ways.
+        </p>
+        <p style="font-size: 16px; color: #555;">
+          This website provides tools and strategies for early childhood teachers to foster creativity across various
+          curriculum areas.
+        </p>
+      </div>
+    </div>
+
+    <div class="drama-puppetry" style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+      <div class="text" style="flex: 2;">
+        <h2 style="margin-bottom: 16px; font-size: 24px; color: #333;">Drama & Puppetry</h2>
+        <p style="margin-bottom: 12px; font-size: 16px; color: #555;">
+          Drama and puppetry are powerful tools in early childhood education, fostering creativity, communication, and
+          social-emotional development. These activities provide children with opportunities to explore emotions,
+          practice problem-solving, and collaborate with peers in an engaging, imaginative way.
+        </p>
+        <h3 style="margin-bottom: 12px; font-size: 20px; color: #333;">Benefits of Drama & Puppetry</h3>
+        <ul style="margin-bottom: 16px; font-size: 16px; color: #555; list-style-type: disc; padding-left: 20px;">
+          <li><strong>Encourages Creativity:</strong> Children can invent stories, create characters, and build
+            imaginative worlds, boosting their creative thinking skills.</li>
+          <li><strong>Develops Communication Skills:</strong> Through role-play and dialogue, children learn to express
+            themselves more effectively and build confidence in speaking.</li>
+          <li><strong>Promotes Emotional Understanding:</strong> Acting out scenarios helps children explore their own
+            emotions and understand the feelings of others.</li>
+          <li><strong>Enhances Motor Skills:</strong> Manipulating puppets improves fine motor skills, while acting out
+            roles supports gross motor development.</li>
+          <li><strong>Teaches Collaboration:</strong> Group performances encourage teamwork, negotiation, and active
+            listening.</li>
+        </ul>
+      </div>
+      <div class="image" style="flex: 1; max-width: 300px;">
+        <img src="./images/DramaPuppetry.jpg" alt="Drama & Puppetry"
+          style="width: 100%; height: auto; border-radius: 8px;" />
+      </div>
+    </div>
+    <div class="drama-puppetry" style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+      <div class="image" style="flex: 1; max-width: 300px;">
+        <img src="./images/darama.jfif" alt="Drama & Puppetry" style="width: 100%; height: auto; border-radius: 8px;" />
+      </div>
+      <div class="text" style="flex: 2;">
+        <p style="margin-bottom: 12px; font-size: 16px; color: #555;">
+          Childhood is a critical period of development, where creativity and imagination play significant roles in
+          shaping
+          a child's cognitive, emotional, and social growth. Drama and puppetry are powerful tools in early childhood
+          education, fostering creativity, communication, and social-emotional development. These activities provide
+          children with opportunities to explore emotions, practice problem-solving, and collaborate with peers in an
+          engaging, imaginative way.
+        </p>
+        <h3 style="margin-bottom: 12px; font-size: 20px; color: #333;">Drama in Childhood Education</h3>
+        <p style="margin-bottom: 12px; font-size: 16px; color: #555;">
+          Drama engages children emotionally and intellectually, allowing them to step into different roles, experiment
+          with
+          perspectives, and express themselves freely. Activities like role-playing, storytelling, and improvisation
+          encourage creativity and teamwork. Teachers can integrate drama into subjects like science and mathematics to
+          make
+          abstract concepts tangible, ensuring inclusive learning for all.
+        </p>
+        <h3 style="margin-bottom: 12px; font-size: 20px; color: #333;">Puppetry in Childhood Education</h3>
+        <p style="margin-bottom: 12px; font-size: 16px; color: #555;">
+          Puppetry captivates children’s attention through storytelling and interaction. Using finger, hand, or shadow
+          puppets, teachers can enhance language skills, build confidence, and encourage problem-solving. Puppets
+          provide
+          shy children with a medium to express themselves, fostering self-assurance and reducing inhibitions.
+        </p>
+        <h3 style="margin-bottom: 12px; font-size: 20px; color: #333;">Benefits of Drama & Puppetry</h3>
+        <ul style="margin-bottom: 16px; font-size: 16px; color: #555; list-style-type: disc; padding-left: 20px;">
+          <li><strong>Encourages Creativity:</strong> Inventing stories, creating characters, and acting out roles boost
+            creative thinking.</li>
+          <li><strong>Develops Communication Skills:</strong> Role-play and dialogue help children express themselves
+            and
+            build speaking confidence.</li>
+          <li><strong>Promotes Emotional Understanding:</strong> Acting out scenarios enables children to explore and
+            understand emotions.</li>
+          <li><strong>Enhances Cognitive Skills:</strong> Planning and performing dramas or puppet shows require
+            sequencing,
+            memory, and problem-solving abilities.</li>
+          <li><strong>Teaches Collaboration:</strong> Group performances foster teamwork, negotiation, and active
+            listening.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2024 Creativity in Early Childhood Education
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Math Numeracy - Facilitating Creativity</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Lato", sans-serif
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #37a3ce;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .menu a:hover {
+            background-color: #8fcce9d7;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 24px;
+            width: 30px;
+            background: transparent;
+            border: none;
+            z-index: 10;
+        }
+
+        .hamburger div {
+            height: 4px;
+            width: 100%;
+            background-color: white;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 1024px) {
+            .menu {
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                overflow-x: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #37a3ce;
+                width: 100%;
+                z-index: 9;
+            }
+
+            .menu.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text h2 {
+                font-size: 20px;
+            }
+
+            .text p {
+                font-size: 14px;
+            }
+
+            .menu a {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .image {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .text {
+            flex: 2 1 300px;
+            text-align: left;
+        }
+
+        .text h2 {
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: #333;
+        }
+
+        .text p {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #37a3ce;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="art.html">Art</a>
+            <a href="drama_puppetry.html">Drama & <br>Puppetry</a>
+            <a href="movement_music.html">Movement &<br> Music</a>
+            <a href="language_literacy.html">Language &<br> Literacy</a>
+            <a href="science.html">Science</a>
+            <a href="engineering.html">Engineering</a>
+            <a href="technologies.html">Technologies</a>
+            <a href="math_numeracy.html">Mathematics &<br> Numeracy</a>
+            <a href="humanities.html">Humanities</a>
+            <a href="integrated_curriculum.html">Integrated Curriculum</a>
+        </div>
+    </nav>
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+            <h2 class="w3-wide">Mathematics &<br> Numeracy</h2>
+            <p class="w3-opacity"><i>We love music</i></p>
+            <p class="w3-justify">Mathematics has often been viewed as a rigid and structured subject, where the focus
+                is placed on getting the correct answer. However, creative thinking in math involves exploring concepts
+                from different angles, asking “what if” questions, and using imagination to solve problems. Teachers can
+                play a crucial role in shifting this perception by incorporating creativity into their teaching
+                strategies.Teachers can facilitate creativity by adopting teaching methods that encourage active
+                participation, problem-solving, and independent thinking. Rather than focusing solely on procedural
+                tasks or rote memorization, educators can create opportunities for students to apply mathematical
+                concepts in real-world contexts, make connections between ideas, and engage with mathematical thinking
+                in a more playful and open-ended way.Creativity in mathematics is often overlooked, with a common
+                emphasis on mastery of basic skills and formulas. However, research suggests that creativity is an
+                essential part of mathematical thinking. Mathematics is inherently creative—it involves pattern
+                recognition, logical reasoning, and the development of innovative strategies for solving complex
+                problems. By fostering creativity in mathematics education, children can develop a deeper appreciation
+                for the subject and strengthen their problem-solving abilities.Moreover, numeracy, which refers to the
+                ability to use and apply mathematics in daily life, can be significantly enhanced through creative
+                approaches. Creative numeracy activities help children see the practical application of math, connect it
+                to their everyday experiences, and build a foundation of skills that they can use in a variety of
+                contexts.Fostering creativity in mathematics and numeracy has numerous benefits for young learners.
+                First, it helps build a strong foundation in mathematical thinking, which is essential for future
+                learning. Creative activities promote problem-solving skills, logical reasoning, and abstract thinking,
+                which are all vital for academic success in mathematics.Second, creativity enhances students' engagement
+                and motivation. When students are allowed to explore math in a creative, hands-on way, they are more
+                likely to develop a positive attitude toward the subject. This leads to increased confidence in their
+                mathematical abilities, which can encourage further exploration and mastery.Third, creativity in math
+                teaches students to embrace failure as part of the learning process. By encouraging experimentation and
+                exploration, teachers help students understand that making mistakes is a natural and valuable part of
+                learning. This mindset fosters resilience and perseverance, both of which are essential qualities for
+                success in mathematics and other areas of life.</p>
+
+        </div>
+        <div class="w3" id="tour">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="./images/num.jfif" alt="New York" style="width:99%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Problem-Based Learning (PBL)</b></p>
+                            <p style="text-align: justify;">Problem-based learning is an excellent method for promoting
+                                creativity in mathematics. In this approach, students are presented with open-ended
+                                problems that require them to think critically and explore various solutions. For
+                                example, rather than simply teaching the concept of addition, a teacher could pose a
+                                real-world problem, such as planning a party, where students need to figure out the
+                                number of guests, seating arrangements, and food quantities. This approach encourages
+                                students to think mathematically while also being creative in finding solutions.</p>
+
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="./images/num1.webp" alt="Paris" style="width:99%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Mathematical Games and Puzzles</b></p>
+                            <p style="text-align: justify;">Incorporating games and puzzles into the curriculum is a fun
+                                and engaging way to foster creativity in mathematics. Games such as Sudoku, tangrams,
+                                and logic puzzles not only encourage problem-solving but also help students see math as
+                                enjoyable and stimulating. Teachers can design math-related games that require students
+                                to think critically, strategize, and apply their mathematical knowledge in a playful,
+                                non-threatening environment. These activities promote creative thinking while
+                                reinforcing important mathematical concepts.</p>
+
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="./images/num2.jfif" alt="San Francisco" style="width:99%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Inquiry-Based Learning</b></p>
+                            <p style="text-align: justify;">Inquiry-based learning encourages students to ask questions
+                                and explore mathematical concepts based on their curiosities. Teachers can create an
+                                environment where students are not simply given answers but are encouraged to ask “why”
+                                and “how” questions. For example, students might explore why certain patterns appear in
+                                numbers or how geometry can be used to solve real-world problems. By promoting curiosity
+                                and critical thinking, inquiry-based learning helps students develop a creative mindset
+                                that is essential for mathematical exploration.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+                <header class="w3-container w3-teal w3-center w3-padding-32">
+                    <span onclick="document.getElementById('').style.display='none'"
+                        class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                    <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+                </header>
+                <div class="w3-container">
+                    <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+                    <input class="w3-input w3-border" type="text" placeholder="How many?">
+                    <p><label><i class="fa fa-user"></i> Send To</label></p>
+                    <input class="w3-input w3-border" type="text" placeholder="Enter email">
+                    <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i
+                            class="fa fa-check"></i></button>
+                    <button class="w3-button w3-red w3-section"
+                        onclick="document.getElementById('').style.display='none'">Close <i
+                            class="fa fa-remove"></i></button>
+                    <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Role of Creativity in Early Childhood Education
+    </footer>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        var modal = document.getElementById('');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
